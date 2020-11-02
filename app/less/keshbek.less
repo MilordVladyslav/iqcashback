@@ -1,0 +1,51 @@
+.keshbek {
+    &::before {
+        content: " ";
+        display: table;
+    }
+    h2 {
+        text-align: center;
+        margin-bottom: 30px;
+        line-height: 59px;
+    }
+    hr {
+        margin-bottom: 58px;
+    }
+    .icon-menu {
+        display: table;
+        margin-bottom: 111px;
+        width: 100%;
+        &::before {
+            content: " ";
+            display: table;
+        }
+        .icon {
+            display: table-cell;
+            text-align: center;
+            p {
+                font-size: 24px;
+                font-family: 'proxima_novabold';
+                margin: 28px 0px 11px;
+            }
+            span {
+                color: @inf-cont;
+                font-family: 'proxima_novaregular';
+                line-height: 1.2;
+                line-height: 23px;
+                font-size: 16px;
+            }
+        }
+        .line {
+            display: table-cell;
+            width: 143px;
+            .light {
+                height: 1px;
+                background-color: @green;
+                border: 0;
+                position: relative;
+                width: 100%;
+                top: 29px;
+            }  
+        }
+    } 
+}

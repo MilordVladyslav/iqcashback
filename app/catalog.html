@@ -1,0 +1,627 @@
+<!DOCTYPE html>
+<html lang="zxx">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/libs.min.css">
+    <link rel="stylesheet" href="./css/all.css">
+</head>
+<body>
+    <div class="header">
+            <div class="head-top">
+                <div class="iq-container">
+                    <div class="btn-top tcenter">
+                        <a href="#">Вход</a> /
+                        <a href="#">Регистрация</a>
+                    </div>
+                </div>
+            </div>
+            <div class="head-bottom">
+                <div class="iq-container">
+                    <div class="logo">
+                        <a href="/">
+                            <img src="./img/logo-black.png" alt="">
+                        </a>
+                    </div>
+                    <form action="/" class="form-search">
+                        <div class="input-group">
+                            <input type="text" class="form-control" placeholder="Введите название магазина...">
+                            <span class="input-group-btn">
+                                <button class="btn btn-link" type="button"><img src="./img/search.png" alt=""></button>
+                            </span>
+                        </div>
+                    </form>
+                    <div class="btn-group">
+                        <div class="nav">
+                            <ul>
+                                <li><a href="">Все магазины</a></li>
+                                <li><a href="">Пригласить друга</a></li>
+                                <li><a href="">Помощь</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div> 
+            </div>
+        </div>
+<div class="iq-container">
+    <section class="catalog">
+        <div class="titleCatalog">
+            <div class="titleCatalog_navigation">
+                <div class="navigate">
+                    <ul class="navigate-list">
+                        <li><a href="#">Главная</a></li>
+                        <li><a href="#">Магазины</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="titleCatalog__bigTitle">
+                <h2>Магазины</h2>
+            </div>
+            <div class="titleCatalog__subTitle">
+                <span>
+                    Лучшие магазины с кэшбэком
+                </span>
+            </div>
+            <hr>
+        </div>
+        <div class="sortCatalog">
+            <div class="block_sort">
+                <button class="sortCatalog__values">
+                        Выберите категорию
+                </button>
+                <button type="button" class="active" data-filter=".popular">
+                    По популярности
+                </button>
+                <button type="button" data-filter=".cash">
+                    По сумме кэшбэка
+                </button>
+                <button type="button" data-filter=".new">
+                    По новизне
+                </button>
+                <button type="button" data-filter=".abc">
+                    По алфавиту
+                </button>
+            </div>
+        </div>
+    </section>
+</div>
+<div class="iq-container">
+    <section class="market">
+        <div class="grid isotop">
+            <div class="grid__row">
+                <div class="grid__col-2 grid__col-sm-3 grid__col-xs-10 popular" data-category="popular">
+                   <div class="block">
+                       <a href="#">
+                            <span class="block__verh">
+                                <span class="img_star">
+                                    <img src="img/rating-2.png" alt="">
+                                </span>
+
+                                <span class="logo_company">
+                                    <img src="img/m-video.png" alt="">
+                                </span>
+                                   <span class="name_company">
+                                        М.Видео
+                                   </span>
+                           </span>
+                            <span class="block__niz">
+                                <span class="title_cash">
+                                        Кэшбэк
+                                </span>
+                                <span class="subTitle_cash">
+                                    до
+                                    <span class="subTitle_cash_bold">
+                                        3
+                                    </span>
+                                    %
+                                </span>
+                            </span>
+                       </a>
+                   </div>
+                </div>
+                <div class="grid__col-2 grid__col-sm-3 grid__col-xs-10 cash" data-category="cash">
+                   <div class="block">
+                       <a href="#">
+                           <span class="block__verh">
+                               <span class="img_star">
+                                   <img src="img/StarTool-Solid-hover.png" alt="">
+                                </span>
+
+                               <span class="logo_company">
+                                    <img src="img/asos.png" alt="">
+                                </span>
+                                <span class="name_company">
+                               <span>
+                                   ASOS
+                               </span>
+                           </span>
+                            </span>
+
+                           <span class="block__niz">
+                                <span class="title_cash">
+                                    Кэшбэк
+                                </span>
+
+                                <span class="subTitle_cash">
+                                    <span class="subTitle_cash_bold">
+                                        3
+                                    </span>
+                                    %
+                                </span>
+                           </span>
+                       </a>
+                   </div>
+                </div>
+                <div class="grid__col-2 grid__col-sm-3 grid__col-xs-10 cash" data-category="cash">
+                    <div class="block">
+                        <a href="#">
+                            <span class="block__verh">
+                               <span class="img_star">
+                                   <img src="img/rating-2.png" alt="">
+                                </span>
+                                <span class="logo_company ">
+                                    <img src="img/media-markt.png" alt="">
+                                </span>
+                                  <span class="name_company">
+                                <span>
+                                        Media Markt
+                                </span>
+                            </span>
+                            </span>
+
+                            <span class="block__niz">
+                                <span class="title_cash">
+                                    Кэшбэк
+                                </span>
+
+                                <span class="subTitle_cash">
+                                    <span class="subTitle_cash_bold">
+                                        1,5
+                                    </span>
+                                    %
+                                </span>
+                            </span>
+                        </a>
+                    </div>
+                </div>
+                <div class="grid__col-2 grid__col-sm-3 grid__col-xs-10 abc" data-category="abc">
+                   <div class="block">
+                       <a href="#">
+                           <span class="block__verh">
+                               <span class="img_star">
+                                   <img src="img/rating-2.png" alt="">
+                               </span>
+
+                               <span class="logo_company">
+                                   <img src="img/ozon.png" alt="">
+                               </span>
+                                <span class="name_company">
+                               <span>
+                                   Ozon.ru
+                               </span>
+                           </span>
+
+                            </span>
+
+                           <span class="block__niz">
+                                <span class="title_cash">
+                                        Кэшбэк
+                                </span>
+
+                                <span class="subTitle_cash">
+                                    <span class="subTitle_cash_bold">
+                                        2,5
+                                    </span>
+                                    %
+                                </span>
+                           </span>
+                       </a>
+                    </div>
+                </div>
+                <div class="grid__col-2 grid__col-sm-3 grid__col-xs-10 new" data-category="new">
+                   <div class="block">
+                       <a href="#">
+                            <span class="block__verh">
+                                <span class="img_star">
+                                    <img src="img/rating-2.png" alt="">
+                                </span>
+                                <span class="logo_company">
+                                    <img src="img/ebay.png" alt="">
+                                </span>
+                                <span class="name_company">
+                                 <span>
+                                     Ebay US
+                                 </span>
+                            </span>
+                            </span>
+
+                            <span class="block__niz">
+                                <span class="title_cash">
+                                    Кэшбэк
+                                </span>
+
+                                <span class="subTitle_cash">
+                                    <span class="subTitle_cash_bold">
+                                        4
+                                    </span>
+                                %
+                                </span>
+                            </span>
+                       </a>
+                    </div>
+                </div>
+
+                <div class="grid__col-2 grid__col-sm-3 grid__col-xs-10 new" data-category="new">
+                    <div class="block">
+                        <a href="#">
+                            <span class="block__verh">
+                                <span class="img_star">
+                                    <img src="img/rating-2.png" alt="">
+                                </span>
+
+                                <span class="logo_company">
+                                    <img src="img/svyaznoy.png" alt="">
+                                </span>
+                                <span class="name_company">
+                                <span>
+                                    Связной
+                                </span>
+                            </span>
+                            </span>
+
+                            <span class="block__niz">
+                                <span class="title_cash">
+                                    Кэшбэк
+                                </span>
+
+                                <span class="subTitle_cash">
+                                    до
+                                    <span class="subTitle_cash_bold">
+                                        1,5
+                                    </span>
+                                    %
+                                </span>
+                            </span>
+                        </a>
+                    </div>
+                </div>
+                <div class="grid__col-2 grid__col-sm-3 grid__col-xs-10 popular" data-category="popular">
+                    <div class="block">
+                        <a href="#">
+                            <span class="block__verh">
+                                <span class="img_star">
+                                    <img src="img/rating-2.png" alt="">
+                                </span>
+                                <span class="logo_company">
+                                    <img src="img/iherb.png" alt="">
+                                </span>
+                                <span class="name_company">
+                                    <span>
+                                        iHerb
+                                    </span>
+                                </span>
+                            </span>
+
+                            <span class="block__niz">
+                                <span class="title_cash">
+                                    Кэшбэк
+                                </span>
+
+                                <span class="subTitle_cash">
+                                    <span class="subTitle_cash_bold">
+                                        3
+                                    </span>
+                                    %
+                                </span>
+                            </span>
+                        </a>
+                    </div>
+                </div>
+                <div class="grid__col-2 grid__col-sm-3 grid__col-xs-10 cash" data-category="abc">
+                    <div class="block">
+                        <a href="#">
+                            <span class="block__verh">
+                                <span class="img_star">
+                                    <img src="img/rating-2.png" alt="">
+                                </span>
+                                <span class="logo_company ">
+                                    <img src="img/gearbest1.png" alt="">
+                                </span>
+                                <span class="name_company">
+                                    <span>
+                                        Gearbest
+                                    </span>
+                                </span>
+                            </span>
+
+                            <span class="block__niz">
+                                <span class="title_cash">
+                                    Кэшбэк
+                                </span>
+
+                                <span class="subTitle_cash">
+                                    <span class="subTitle_cash_bold">
+                                        1,5
+                                    </span>
+                                    %
+                                </span>
+                            </span>
+                        </a>
+                    </div>
+                </div>
+                <div class="grid__col-2 grid__col-sm-3 grid__col-xs-10 popular" data-category="popular">
+                    <div class="block">
+                        <a href="#">
+                            <span class="block__verh">
+                                <span class="img_star">
+                                    <img src="img/rating-2.png" alt="">
+                                </span>
+                                <span class="logo_company ">
+                                    <img src="img/booking.png" alt="">
+                                </span>
+                                <span class="name_company">
+                                    <span>
+                                        Booking.com
+                                    </span>
+                                    </span>
+                            </span>
+
+
+
+                            <span class="block__niz">
+                                <span class="title_cash">
+                                    Кэшбэк
+                                </span>
+                                <span class="subTitle_cash">
+                                    <span class="subTitle_cash_bold">
+                                        1
+                                    </span>
+                                    %
+                                </span>
+                            </span>
+                        </a>
+                    </div>
+                </div>
+                <div class="grid__col-2 grid__col-sm-3 grid__col-xs-10 new" data-category="new">
+                    <div class="block">
+                        <a href="#">
+                            <span class="block__verh">
+                                <span class="img_star">
+                                    <img src="img/rating-2.png" alt="">
+                                </span>
+                                <span class="logo_company ">
+                                    <img src="img/vse-instrumenty.png" alt="">
+                                </span>
+                                <span class="name_company">
+                                <span>
+                                    Всеинструменты.ру
+                                </span>
+                            </span>
+                            </span>
+
+                            <span class="block__niz">
+                                <span class="title_cash">
+                                        Кэшбэк
+                                </span>
+                                <span class="subTitle_cash">
+                                    <span class="subTitle_cash_bold">
+                                        1,6
+                                    </span>
+                                %
+                                </span>
+                            </span>
+                        </a>
+                    </div>
+                </div>
+                <div class="grid__col-2 grid__col-sm-3 grid__col-xs-10 popular" data-category="popular">
+                    <div class="block">
+                        <a href="#">
+                            <span class="block__verh">
+                                <span class="img_star">
+                                    <img src="img/rating-2.png" alt="">
+                                </span>
+                                <span class="logo_company">
+                                    <img src="img/letual.png" alt="">
+                                </span>
+                                <span class="name_company">
+                                <span>
+                                    л’Этуаль
+                                </span>
+                            </span>
+                            </span>
+                            <span class="block__niz">
+                                <span class="title_cash">
+                                    Кэшбэк
+                                </span>
+
+                                <span class="subTitle_cash">
+                                    до
+                                    <span class="subTitle_cash_bold">
+                                        2
+                                    </span>%
+                                </span>
+                            </span>
+                        </a>
+                    </div>
+                </div>
+                <div class="grid__col-2 grid__col-sm-3 grid__col-xs-10 new" data-category="new">
+                    <div class="block">
+                        <a href="#">
+                            <span class="block__verh">
+                                <span class="img_star">
+                                    <img src="img/rating-2.png" alt="">
+                                </span>
+                                <span class="logo_company">
+                                    <img src="img/mamsy2.png" alt="">
+                                </span>
+                                 <span class="name_company">
+                                    <span>
+                                        Mamsy
+                                    </span>
+                                </span>
+                            </span>
+
+
+                            <span class="block__niz">
+                                <span class="title_cash">
+                                    Кэшбэк
+                                </span>
+
+                                <span class="subTitle_cash">
+                                    <span class="subTitle_cash_bold">
+                                        3
+                                    </span>
+                                    %
+                                </span>
+                            </span>
+                        </a>
+                    </div>
+                </div>
+                <div class="grid__col-2 grid__col-sm-3 grid__col-xs-10 cash" data-category="cash">
+                    <div class="block">
+                        <a href="#">
+                            <span class="block__verh">
+                                <span class="img_star">
+                                    <img src="img/rating-2.png" alt="">
+                                </span>
+                                <span class="logo_company">
+                                    <img src="img/tutu.jpeg" alt="">
+                                </span>
+                                 <span class="name_company">
+                                <span>
+                                    Tutu.ru
+                                </span>
+                            </span>
+                            </span>
+                            <span class="block__niz">
+                                <span class="title_cash">
+                                    Кэшбэк
+                                </span>
+                                <span class="subTitle_cash">
+                                    <span class="subTitle_cash_bold">
+                                        1,5
+                                    </span>
+                                    %
+                                </span>
+                            </span>
+                        </a>
+                    </div>
+                </div>
+                <div class="grid__col-2 grid__col-sm-3 grid__col-xs-10 cash" data-category="cash">
+                    <div class="block">
+                        <a href="#">
+                            <span class="block__verh">
+                                <span class="img_star">
+                                    <img src="img/rating-2.png" alt="">
+                                </span>
+                                <span class="logo_company ">
+                                    <img src="img/velosklad.png" alt="">
+                                </span>
+                                <span class="name_company">
+                                <span>
+                                    Велосклад
+                                </span>
+                            </span>
+                            </span>
+                            <span class="block__niz">
+                                <span class="title_cash">
+                                    Кэшбэк
+                                </span>
+
+                                <span class="subTitle_cash">
+                                    <span class="subTitle_cash_bold">
+                                        2,5
+                                    </span>
+                                %
+                                </span>
+                            </span>
+                        </a>
+                    </div>
+                </div>
+                <div class="grid__col-2 grid__col-sm-3 grid__col-xs-10 cash" data-category="cash">
+                    <div class="block">
+                        <a href="#">
+                            <span class="block__verh">
+                                <span class="img_star">
+                                    <img src="img/rating-2.png" alt="">
+                                </span>
+                                <span class="logo_company">
+                                    <img src="img/rentalcars.png" alt="">
+                                </span>
+                                 <span class="name_company">
+                                    <span>
+                                       Rentalcars
+                                    </span>
+                                </span>
+                            </span>
+                            <span class="block__niz">
+                                <span class="title_cash">
+                                    Кэшбэк
+                                </span>
+                                <span class="subTitle_cash">
+                                    <span class="subTitle_cash_bold">
+                                        2
+                                    </span>
+                                %
+                                </span>
+                            </span>
+                        </a>
+                    </div>
+                </div>
+             </div>
+        </div>
+    </section>
+    <div class="echo_more">
+        <div class="more">
+            <button type="button" class="btn_s">
+                ПОКАЗАТЬ ЕЩЕ
+            </button>
+            <span class="count_m">
+                <span class="bold">15 магазинов</span> из 247
+            </span>
+        </div>
+    </div>
+</div>
+<div class="footer">
+    <div class="d-table w100 bg-footer-grey">
+        <div class="d-cell bg-footer-green"></div>
+        <div class="d-cell f-left bg-footer-green">
+            <div class="logo">
+                <a href="/"> <img src="./img/logo.png" alt=""></a>
+            </div>
+        </div>
+        <div class="d-cell f-right">
+            <div class="info-footer">
+                <div class="footer-menu">
+                    <ul>
+                        <li><a href="#">Kак работает кэшбэк?</a></li>
+                        <li><a href="#">Расширение для браузера</a></li>
+                        <li><a href="#">Помощь</a></li>
+                        <li><a href="#">Приведи друга</a></li>
+                    </ul>
+                </div>
+                <div class="footer-menu">
+                    <ul>
+                        <li><a href="#">Правила совершения <br> <br> покупок с кэшбэком</a></li>
+                        <li><a href="#">Добавить магазин в каталог</a></li>
+                        <li><a href="#">Для постоянных клиентов</a></li>
+                    </ul>
+                </div>
+                <div class="footer-menu">
+                        <ul>
+                        <li><a href="#">Партнерская программа</a></li>
+                        <li><a href="#">Контакты</a></li>
+                        <li><a href="#">Отзывы</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="d-cell"></div>
+    </div>  
+</div>
+<script src="./js/libs.min.js"></script>
+<script src="./js/common.js"></script>
+</body>
+</html>

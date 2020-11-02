@@ -1,0 +1,87 @@
+.titleCatalog_text {
+  padding-top: 40px;
+  & .navigate_text{
+    margin-bottom: 0;
+  }
+}
+.titleCatalog_text_bigTitle {
+  margin-bottom: 28px;
+  & .contentTitle{
+    font-family: proxima_novabold;
+    font-size: 50px;
+    line-height: 58px;
+  }
+}
+
+.contentText {
+  width:  717px;
+  margin: 0 auto;
+  font-family: proxima_novaregular;
+
+  & .content {
+    & .title {
+      margin-top: 44px;
+      margin-bottom: 26px;
+      font-size: @textTitle-size;
+      font-family: proxima_novabold;
+      font-weight: bold;
+    }
+    & .content__text {
+      font-size: @content-size;
+      text-align: left;
+      line-height: 27px;
+      margin-bottom: 32px;
+      &:first-child{
+        margin-bottom: 32px;
+      }
+      &_pI{
+        margin-bottom: 46px;
+      }
+      &_pQ{
+        margin-bottom: 45px;
+      }
+    }
+    & .content__img {
+      margin-bottom: 30px;
+    }
+    & .content__quote {
+      box-sizing: border-box;
+      width: 100%;
+      background-color: @content_quote-bg;
+      padding: 19px 115px 29px 32px;
+      margin-bottom: 32px;
+      & img{
+        float: left;
+        margin-top: 13px;
+      }
+      & .text_q{
+        display: block;
+        margin-left: 61px;
+        font-size: 17px;
+        font-family: proxima_novabold;
+        font-weight: bold;
+        text-align: left;
+        line-height: 27px;
+      }
+    }
+    & .content_br {
+      padding-bottom: 43px;
+      border-bottom: 1px solid  @gray;
+      margin-bottom: 28px;
+    }
+  }
+  & .social {
+    .vk , #vkshare0, .twitter{
+      float: left;
+    }
+    .facebook {
+      float: left;
+      margin-left: 20px;
+    }
+    #ok_shareWidget {
+      float: left;
+      margin-left: -115px;
+    }
+    margin-bottom: 292px;
+  }
+}

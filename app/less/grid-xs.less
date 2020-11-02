@@ -1,0 +1,11 @@
+
+/*Генерация сетки xs*/
+@column-name-xs: grid__col-xs; // Префикс класса сетки
+@column-count-xs: 10;  // Количество классов
+.generate-column-xs(@i: 1) when (@i =< @column-count-xs) {
+  .@{column-name-xs}-@{i} {
+    width: percentage(@i / @column-count-xs);
+  }
+  .generate-column-xs(@i + 1);
+}
+.generate-column-xs();

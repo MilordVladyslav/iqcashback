@@ -1,0 +1,139 @@
+.header {
+    font-family: 'proxima_novabold';
+    .head-top {
+        min-height: 47px;
+        background-color: @black;
+        text-align: right;
+        color: @white;
+        position: relative;
+        width: 100%;
+        .btn-top{
+            right: 53px;
+            a {
+                color: @white;
+                text-decoration: none;
+                font-size: 14px;
+                margin-right: 10px;
+            }
+        }
+    }
+    .head-bottom {
+        position: relative;
+        display: block;
+        min-height: 85px;
+        background-color: @white;
+        box-shadow: 0 5px 5px -5px rgba(0,0,0,0.5);
+        .logo {
+            display: inline-block;
+            margin: 23px 50px 0 0;
+        }
+        .gen-btn {
+            display: none;
+            .btn-gen {
+                background-color: white;
+                width: 40px;
+                height: 40px;
+                color: black;
+                float: right;
+                position: relative;
+                border: 2px solid black;
+                bottom: 53px;
+                border-radius: 5px;
+                .icon-bar {
+                    width: 26px;
+                    position: absolute;
+                    height: 3px;
+                    left: 5px;
+                    top: 17px;
+                    background-color: black;
+                }
+                .icon-bar-1 {
+                    width: 26px;
+                    position: absolute;
+                    height: 3px;
+                    left: 5px;
+                    top: 7px;
+                    background-color: black;
+                }
+                .icon-bar-2 {
+                    width: 26px;
+                    position: absolute;
+                    height: 3px;
+                    bottom: 6px;
+                    left: 5px;
+                    background-color: black;
+                }
+            }
+        }
+        .form-search {
+            display: inline-block;
+            position: relative;
+            top: 7px;
+            margin-right: 46px;
+            width: 500px;
+            .input-group {
+                display: table;
+                border-collapse: separate;
+                width: 100%;
+                .form-control { 
+                    display: table-cell;
+                    padding: 16px 45px 15px 15px;
+                    border: 1px solid @gray;
+                    border-radius: 5px;
+                    width: 100%;
+                    box-sizing: border-box;
+                    &::placeholder {
+                        font-family: 'proxima_novabold';
+                        color: @gray-form;
+                        font-size: 16px;
+                    }
+                    &:active {
+                        outline: 0;
+                    }
+                    &:focus {
+                        outline: 0;
+                    }
+                }
+                .input-group-btn {
+                    display: table-cell;
+                    font-size: 0;
+                    white-space: nowrap;
+                    vertical-align: middle;
+                    .btn-link {
+                        border-radius: 5px;
+                        padding: 14px 16px 13px 0;
+                        background: none;
+                        margin-left: -30px;
+                        &:active {
+                            outline: 0;
+                        }
+                        &:focus {
+                            outline: 0;
+                        }
+                    }
+                } 
+            }
+        }
+        .btn-group {
+            display: inline-block;
+            position: relative;
+            bottom: 15px;
+            ul {
+                font-size: 0;
+                li {
+                    display: inline-block;
+                    margin-left: 28px;
+                    a {
+                        color: @black;
+                        text-decoration: none;
+                        font-size: 16px;
+                    }
+                    &:first-child {
+                        margin-left: 0;
+                    }
+                }
+            }
+        }
+    }
+}
+

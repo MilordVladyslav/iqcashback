@@ -1,0 +1,264 @@
+
+@media @md{
+
+    .infoMarket {
+        .infoMarket-content {
+            padding-left: 197px;
+        }
+         .content-wrapper {
+            width: 737px;
+        }
+        .info {
+            .cashback,  .waitings, .avaliables {
+                margin-right: 87px;
+                margin-bottom: 0;
+            }            
+        }
+
+        .subTitle_cash {
+            font-size: 25px;
+        }        
+        .cashback, .waitings {
+            margin-bottom: 40px;
+        }
+
+        .reviews-title {
+            padding: 24px 90px;
+        }
+        
+        .form {
+            .send {
+                margin-right: 45px;
+            }
+        }
+    }
+}
+
+@media @sm { 
+
+    .infoMarket {
+        
+        .infoMarket__add {
+          margin-top: 20px;
+          .back {
+            margin-top: 60px;
+            float: left;
+          }
+          .setup {
+            width: 400px;
+            height: 100px;
+            margin-left: 300px;
+            padding: 11px 21px 25px 23px;
+            background: #16CD76;
+            border-radius: 10px;
+            .subTitle {
+                clear: none;
+                margin-bottom: 0;
+            }
+
+            .red-button {
+                margin-top: 5px;
+            }
+
+            .setup__content {
+                text-align: center;
+            }
+          }
+        }
+
+        .infoMarket-content {
+            padding-top: 190px;
+            padding-left: 20px;
+            padding-right: 20px;
+        }
+
+        .content-wrapper {
+            width: 100%;
+            .info {
+                .avaliables {
+                    margin-right: 87px;
+                }
+                .cashback,  .waitings{
+                    margin-right: 67px;
+                    margin-bottom: 30px;
+                }                   
+            }
+        }
+
+        .bigTitle, .brand {
+            font-size: 43px;
+        }
+ 
+        .reviews-title {
+            padding: 24px 95px;
+            font-size: 16px;
+            .item, .item-last {
+            }
+        }
+
+        .subTitle_cash {
+            font-size: 25px;
+        }
+
+        .textInfo {
+            .red-button {
+                background-position: 183px;
+                padding: 16px 32px 16px 10px;
+            }       
+        }
+
+        .reviews-message {
+            .title {
+                font-size: 25px;
+            }
+        }
+
+        .titleMarket {
+            font-size: 25px;
+        }
+
+    }
+
+    .iq-container {
+        .market {
+            padding-left: 0;
+        }        
+    }
+
+    /*Генерация сетки sm*/
+    .infoMarket {
+        @column-name-sm: grid__col-sm-s; // Префикс класса сетки
+        @column-count-sm: 8;  // Количество классов
+        .generate-column-sm-s(@i: 1) when (@i =< @column-count-sm) {
+        .@{column-name-sm}-@{i} {
+            width: percentage(@i / @column-count-sm);
+        }
+        .generate-column-sm-s(@i + 1);
+        }
+        .generate-column-sm-s();    
+    }
+
+}
+
+@media @xs {
+    .infoMarket {
+
+         .infoMarket__add {
+            width: 100%;
+
+            .back {
+                margin-top: 30px;
+                float: none;
+                margin-left: 12px;
+            }
+            .setup {
+                margin: 0 auto;
+                width: 95%;
+                padding: 11px 0px 25px 0px;
+            }
+        }
+
+        .navigate {
+            margin-bottom: 40px;
+        }
+
+        .bigTitle {
+            text-align: left;
+            font-size: 40px;
+            line-height: 10px;
+        }
+
+        .brand {
+            clear: left;
+            text-align: left;
+            font-size: 20px;
+            margin-bottom: 20px;
+        }
+
+        .infoMarket-content {
+            padding-top: 290px;
+            padding-left: 20px;
+            padding-right: 20px;
+        }
+        
+        .content-wrapper {
+
+            .red-button, .light-button {
+                width: 100%;
+                background-image: none;
+            }
+
+            .red-button {
+                margin-bottom: 20px;
+            }
+
+            .info {
+
+                .cashback, .waitings, .avaliables, .geography {
+                    margin: 0;
+                    margin-bottom: 20px;  
+                }
+                
+                .avaliables {
+                    .title_cash {
+                        background: none;
+                    } 
+                }
+
+                .info-block {
+                    float: none;
+                    text-align: center;
+                }            
+            }                
+        }
+        
+        .reviews-title {
+            padding: 14px 0 0 24px;
+            font-size: 16px;
+            box-sizing: border-box;
+            .item, .item-last {
+                clear: both;
+                margin-bottom: 14px;
+            }
+        }
+
+        .reviews-message {
+
+            .date {
+                clear: left;
+                margin-left: 56px;
+            }
+             .user-text {
+                padding-right: 0;
+                margin-top: 10px;
+            }           
+        }
+
+        .form-wrapper { 
+
+            .title {
+                float: none;
+            }
+
+            .review {
+                display: block;
+                width:  90%;
+                margin: 20px auto;
+            }
+            
+            .evaluation {
+                float: right;
+                margin-bottom: 30px;
+            }
+
+            .send {
+                clear: both;
+                margin-right: 0;
+            }
+        }
+
+        .market {
+            padding-bottom: 50px;
+        }
+    }
+}

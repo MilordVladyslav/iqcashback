@@ -1,0 +1,275 @@
+.titleCatalog {
+  text-align: center;
+  &_navigation {
+    width: 100%;
+  }
+  & .navigate {
+    margin-bottom: 18px;
+    display: inline-block;
+    &::after {
+      content: " ";
+      display: table;
+      clear: both;
+    }
+    & .navigate-list {
+      margin-bottom: 28px;
+    }
+
+    & .navigate-list li {
+      float: left;
+      background: url("../img/arrow-right.png") no-repeat;
+      background-position-x: right;
+      background-position-y: 4px;
+      padding-right: 25px;
+      margin-right: 16px;
+      font-size: 13px;
+
+      & a {
+        color: #7f7f7f;
+      }
+    }
+  }
+  & .navigate-list li:last-child {
+    background: none;
+    & a {
+      font-weight: bold;
+      color: black;
+    }
+  }
+  &__bigTitle{
+    margin-top: -4px;
+    font-size: @titleSize;
+    line-height: @titleSize;
+    color: @black;
+  }
+  &__subTitle {
+    margin-top: 20px;
+    font-size: @subTitle-size;
+    line-height: @subTitle-size;
+  }
+  & hr {
+    margin-top: 27px;
+  }
+}
+.catalog {
+  padding-top: 42px;
+  font-size: 0;
+  margin-bottom: 40px;
+  text-align: center;
+  .sortCatalog {
+    display: inline-block;
+    margin: 46px auto 0 auto;
+    border-bottom: 1px solid #e8e8e8;
+    padding-bottom: 12px;
+      &__values {
+        position: relative;
+        float: left;
+        padding-left: 21px;
+        margin-right: 78px;
+        font-family: proxima_novabold;
+        font-size: @category-size;
+        font-weight: bold;
+        &::before {
+          content: " ";
+          background-image: url("../img/rectangle.png");
+          background-repeat: no-repeat;
+          height: 11px;
+          width: 11px;
+          position: absolute;
+          left: 0;
+          top: 5px;
+        }
+        &:hover {
+          cursor: pointer;
+        }
+      }
+      & button[type="button"] {
+        padding: 1px 0 0 0;
+        position: relative;
+        font-family: proxima_novabold;
+        font-size: @category-size-cont;
+        cursor: pointer;
+        margin-left: 70px;
+        position: relative;
+        color: @category-color;
+        &::before {
+          content: " ";
+          background-image: url("../img/sort.png");
+          height: 10px;
+          width: 11px;
+          position: absolute;
+          right: -18px;
+          top: 5px
+        }
+        &:first-child {
+          margin-left: 0;
+        }
+      }
+      & .active {
+        color: @black;
+        &::before{
+          content: " ";
+          background-image: url("../img/sort-hover.png");
+          height: 10px;
+          width: 11px;
+          position: absolute;
+          right: -20px;
+          top: 5px
+        }
+      }
+      & .block_sort {
+        display: inline-block;
+        padding-right: 11px;
+      }
+    }
+  }
+.market {
+    position: relative;
+    .grid {
+        width: 100%;
+        &__row {
+            margin-left: -9px;
+            margin-right: -9px;
+
+          &::after {
+            content: "";
+            display: table;
+            clear: both;
+          }
+        }
+        &__col-2, &__col-3 {
+          & span{
+            display: block;
+          }
+          padding-left: 9px;
+          padding-right: 9px;
+          margin-bottom: 18px;
+          float: left;
+          height: 230px;
+          box-sizing: border-box;
+          & .block {
+            height: 230px;
+            border: 1px solid @block-border;
+            border-radius: 5px;
+            & a {
+              text-decoration: none;
+            }
+            &:hover {
+              & {
+                border: 1px solid @block-border-hover ;
+              }
+              & .block__niz {
+                background-color: @block-niz-hover;
+                & .title_cash {
+                  color: @white;
+
+                }
+                & .subTitle_cash {
+                  color: @white;
+                  display: inline;
+                }
+              }
+            }
+          }
+
+          & .block__verh {
+            position: relative;
+            border-bottom: 1px solid #eaeaea;
+            text-align: center;
+            padding-top: 27px;
+            box-sizing: border-box;
+            height: 126px;
+            & .img_star {
+              position: absolute;
+              right: 16px;
+              top: 9px;
+            }
+            & .logo_company{
+
+              margin-bottom: 12px;
+            }
+          }
+
+          .name_company {
+            font-size: @sizeText-content;
+            color: @color-name_company;
+            position: absolute;
+            bottom: 14px;
+            width: 100%;
+          }
+
+          & .block__niz {
+            position: relative;
+            height: 104px;
+            background-color: @block-niz-bg;
+            text-align: center;
+            & .title_cash {
+              font-size: 12px;
+              color: @block-niz-border;
+              padding-top: 28px;
+            }
+            & .subTitle_cash {
+              font-size: 18px;
+              color: @black;
+              margin-top: -4px;
+              &_bold {
+                font-weight: 700;
+                font-size: 35px;
+                display: inline;
+              }
+            }
+          }
+        }
+    }
+  .btn-favor {
+    text-align: center;
+    margin-top: 42px;
+    margin-bottom: 146px;;
+    .iq-btn-1 {
+        padding: 16px 37px 16px 37px;
+       img {
+         margin-left: 8px;
+       }
+    }
+  }
+}
+.echo_more {
+  text-align: center;
+  margin-top: 51px;
+  padding-bottom: 76px;
+  .block {
+    text-align: center;
+  }
+  & .more {
+    display: inline-block;
+  }
+  & .btn_s {
+    cursor: pointer;
+    padding: 16px 52px 18px 60px;
+    background-color: @btn-bg;
+    color: @btn-color;
+    font-family: proxima_novabold;
+    font-weight: bold;
+    font-size: @sizeText-content;
+    border-radius: 5px;
+  }
+  & .count_m {
+    font-size: 14px;
+    margin-left: 32px;
+    color: @echo_span;
+    & .bold {
+      font-family: proxima_novabold;
+      font-weight: bold;
+    }
+  }
+}
+/*Генерация сетки*/
+@column-name: grid__col; // Префикс класса сетки
+@column-count: 10;  // Количество классов
+.generate-column(@i: 1) when (@i =< @column-count) {
+  .@{column-name}-@{i} {
+      width: percentage(@i / @column-count);
+  }
+  .generate-column(@i + 1);
+}
+.generate-column();

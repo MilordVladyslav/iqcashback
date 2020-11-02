@@ -1,0 +1,42 @@
+.footer {
+    font-family: 'proxima_novaregular';
+    font-size: 14px;
+    height: 239px;
+    width: 100%;
+    display: block;
+    position: relative;
+    font-size: 0;
+    overflow: hidden;
+    .f-left {
+        width: 330px;
+    }
+    .f-right {
+        width: 799px;
+    }
+    .logo {
+        position: relative;
+        top: 60px;
+        right: 22px;
+    }
+    .info-footer {
+        margin: 65px 0 65px 78px;
+        .footer-menu {
+            display: inline-block;
+            vertical-align: top;
+            margin-right: 94px;
+            &:last-child {
+                margin-right: 0;
+            }
+            ul{
+                li {
+                    margin-bottom: 15px;
+                    a {
+                        font-size: 14px;
+                        color: @color-footer;
+                        text-decoration: none;
+                    }
+                }
+            }
+        }
+    }
+}

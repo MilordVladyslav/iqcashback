@@ -1,0 +1,139 @@
+body {
+    font-family: 'proxima_novaregular';
+}
+
+:active, :hover, :focus {
+    outline: 0;
+    outline-offset: 0;
+}
+
+.BigtitleText {
+    font-size: @titleSize;
+    color: #000000;
+    text-align: center;
+}
+p, h2 {
+    margin: 0;
+}
+button {
+    border: none;
+    background: none;
+    box-shadow: none;
+}
+.red-button {
+    color:white;
+    background: @orange;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.light-button {
+    color: @orange;
+    border: 1px solid @orange;
+    cursor: pointer;
+}
+.iq-container {
+    width: 1170px;
+    margin: 0 auto;
+    &::before {
+        display: table;
+        content: ' ';
+    }
+}
+.tcenter {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+h1 {
+    font-size: 60px;
+    font-family: 'proxima_novabold';
+    line-height: 73px;
+}
+
+.iq-btn {
+    text-decoration: none;
+    color: @green;
+    background-color: none;
+    font-size: 16px;
+    font-family: 'proxima_novabold';
+    border: 2px solid @green;
+    border-radius: 5px;
+    text-transform: uppercase;
+}
+.iq-btn-1 {
+    text-decoration: none;
+    background-color: @green;
+    font-size: 16px;
+    color: @white;
+    font-family: 'proxima_novabold';
+    border-radius: 5px;
+    text-transform: uppercase;
+}
+
+h2 {
+    font-size: 50px;
+    font-family: 'proxima_novabold';
+    margin: 0;
+    text-align: center;
+}
+hr {
+    height: 5px;
+    background-color: @green;
+    border: 0;
+    width: 59px;
+    &.inner {
+        width: 380px;
+        margin: 0 auto;
+        height: 1px;
+    }
+    &.hrCat {
+        width: 60px;
+        height: 3px;
+    }
+}
+.ltcenter {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateY(-50%) translateX(-50%);
+}
+a {
+    text-decoration: none;
+}
+li {
+    list-style: none;
+}
+
+.clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.d-table {
+    display: table;
+}
+
+.d-cell {
+    display: table-cell;
+    vertical-align: text-top;
+}
+
+.w100 {
+    width: 100%;
+}
+
+.bg-footer-green {
+    background-color: @green;
+}
+
+.bg-footer-grey {
+    background-color: @bg-footer;
+}
+
+img {
+    width: auto;
+    max-width: 100%;
+    height: auto;
+}

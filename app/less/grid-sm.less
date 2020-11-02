@@ -1,0 +1,11 @@
+/*Генерация сетки sm*/
+@column-name-sm: grid__col-sm; // Префикс класса сетки
+@column-count-sm: 9;  // Количество классов
+.generate-column-sm(@i: 1) when (@i =< @column-count-sm) {
+  .@{column-name-sm}-@{i} {
+    width: percentage(@i / @column-count-sm);
+  }
+  .generate-column-sm(@i + 1);
+}
+.generate-column-sm();
+
